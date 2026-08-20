@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "min_app": "1.0.0",
+  "note": "Overlay on the in-app bundled catalog. Push this file (and catalog/covers/*.png) to a public HTTPS host; the app picks it up on next launch or foreground — no App Store build. Rows with unknown model_types are ignored. Empty models leaves the bundled list unchanged. announcements[].image_url must be https.",
+  "hide": [],
+  "models": [],
+  "announcements": []
+}
