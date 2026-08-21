@@ -1,8 +1,10 @@
 {
   "schema_version": 1,
   "min_app": "1.0.0",
-  "note": "Overlay on the bundled catalog. Launch + foreground fetch. relocate moves existing rows/series between recommended and legacy without restating Hub fields. New models[] rows are prepended (latest first). Unknown model_types are ignored. Empty models + empty relocate leaves the bundled list unchanged. announcements[].image_url must be https.",
-  "hide": [],
+  "note": "Hide the leftover LFM 2.5 1.2B on Legacy. Recommend keeps LFM 2.5 VL + 2.6B as the current series.",
+  "hide": [
+    "lfm2.5-1.2b-4bit"
+  ],
   "relocate": [],
   "models": [],
   "announcements": []
