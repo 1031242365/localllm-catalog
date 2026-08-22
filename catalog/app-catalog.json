@@ -35,11 +35,11 @@
   ],
   "announcements": [
     {
-      "id": "qwen35-4b-test-2026-08",
+      "id": "qwen35-4b-2026-08-drop",
       "model_id": "qwen3.5-4b-4bit",
       "image_url": "https://raw.githubusercontent.com/1031242365/localllm-catalog/main/catalog/covers/qwen3.5-4b-4bit.png",
       "title": {"en": "Qwen 3.5 4B is here", "zh-Hans": "Qwen 3.5 4B 来了"},
-      "body": {"en": "A larger on-device Qwen for chat and images. Test card — the cover is a white placeholder.", "zh-Hans": "更大的端侧 Qwen，对话和看图。测试卡片，封面先用白图。"}
+      "body": {"en": "A larger on-device Qwen for chat and images.", "zh-Hans": "更大的端侧 Qwen，对话和看图。"}
     }
   ]
 }
