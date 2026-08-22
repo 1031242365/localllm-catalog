@@ -1,11 +1,16 @@
 {
   "schema_version": 1,
   "min_app": "1.0.0",
-  "note": "Hide leftover LFM 2.5 1.2B. Add phone-sized Qwen 3.5 4B (qwen3_5) to Recommend. Qwen3.8-27B is ~16GB and stays off the phone list.",
+  "note": "Hide leftover LFM 2.5 1.2B. Qwen 3.5 4B stays on Recommend; 2B moves to Legacy. Qwen3.8-27B is ~16GB and stays off the phone list.",
   "hide": [
     "lfm2.5-1.2b-4bit"
   ],
-  "relocate": [],
+  "relocate": [
+    {
+      "id": "qwen3.5-2b-4bit",
+      "board": "legacy"
+    }
+  ],
   "models": [
     {
       "id": "qwen3.5-4b-4bit",
