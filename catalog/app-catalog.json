@@ -100,7 +100,8 @@
           "en": "MiniCPM5 — compact on-device text models.",
           "zh-Hans": "MiniCPM5，轻量端侧文字模型。"
         }
-      }
+      },
+      "logo_url": "https://raw.githubusercontent.com/1031242365/localllm-catalog/main/catalog/logos/minicpm-v1.png"
     }
   ],
   "announcements": []
