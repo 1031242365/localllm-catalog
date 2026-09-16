@@ -19,7 +19,10 @@
       "hub_id": "mlx-community/Qwen3.5-4B-MLX-4bit",
       "approximate_size_gb": 3.0,
       "license_url": "https://huggingface.co/Qwen/Qwen3.5-4B",
-      "extra_eos_tokens": ["<|im_end|>", "<|endoftext|>"],
+      "extra_eos_tokens": [
+        "<|im_end|>",
+        "<|endoftext|>"
+      ],
       "requires_chat_template": true,
       "board": "recommended",
       "kind": "chat",
@@ -28,13 +31,75 @@
       "variant_slug": "4b",
       "series_title": "Qwen 3.5",
       "native_vision": true,
-      "model_types": ["qwen3_5"],
+      "model_types": [
+        "qwen3_5"
+      ],
       "copy": {
-        "menu_subtitle": {"en": "Chat and images, 4B", "zh-Hans": "对话与看图，4B"},
-        "browse_subtitle": {"en": "Larger Qwen 3.5 — chat and images", "zh-Hans": "更大的 Qwen 3.5，对话与看图"},
-        "memory_hint": {"en": "iPhone 14 or newer · about 3.5GB free", "zh-Hans": "建议 iPhone 14 及以上 · 约需 3.5GB 可用存储"},
-        "strength": {"en": "Everyday chat", "zh-Hans": "日常对话"},
-        "series_subtitle": {"en": "Qwen 3.5 — chat and images on device.", "zh-Hans": "Qwen 3.5，端侧对话与看图。"}
+        "menu_subtitle": {
+          "en": "Chat and images, 4B",
+          "zh-Hans": "对话与看图，4B"
+        },
+        "browse_subtitle": {
+          "en": "Larger Qwen 3.5 — chat and images",
+          "zh-Hans": "更大的 Qwen 3.5，对话与看图"
+        },
+        "memory_hint": {
+          "en": "iPhone 14 or newer · about 3.5GB free",
+          "zh-Hans": "建议 iPhone 14 及以上 · 约需 3.5GB 可用存储"
+        },
+        "strength": {
+          "en": "Everyday chat",
+          "zh-Hans": "日常对话"
+        },
+        "series_subtitle": {
+          "en": "Qwen 3.5 — chat and images on device.",
+          "zh-Hans": "Qwen 3.5，端侧对话与看图。"
+        }
+      }
+    },
+    {
+      "id": "minicpm5-2b-4bit",
+      "display_name": "MiniCPM5 2B (4-bit)",
+      "family": "MiniCPM",
+      "hub_id": "openbmb/MiniCPM5-2B-MLX",
+      "approximate_size_gb": 1.5,
+      "license_url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "extra_eos_tokens": [
+        "</s>",
+        "<|im_end|>"
+      ],
+      "requires_chat_template": true,
+      "board": "recommended",
+      "kind": "chat",
+      "series_id": "minicpm5",
+      "short_name": "MiniCPM5 2B",
+      "variant_slug": "2b",
+      "series_title": "MiniCPM5",
+      "native_vision": false,
+      "model_types": [
+        "llama"
+      ],
+      "copy": {
+        "menu_subtitle": {
+          "en": "Lightweight text and reasoning",
+          "zh-Hans": "轻量文字对话与推理"
+        },
+        "browse_subtitle": {
+          "en": "Compact text model for chat, writing and reasoning",
+          "zh-Hans": "轻量文字模型，对话、写作与推理"
+        },
+        "memory_hint": {
+          "en": "About 1.5GB download",
+          "zh-Hans": "下载约 1.5GB"
+        },
+        "strength": {
+          "en": "Text and reasoning",
+          "zh-Hans": "文字对话与推理"
+        },
+        "series_subtitle": {
+          "en": "MiniCPM5 — compact on-device text models.",
+          "zh-Hans": "MiniCPM5，轻量端侧文字模型。"
+        }
       }
     }
   ],
