@@ -31,7 +31,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Local LLM: On-Device · Effective August 21, 2026</p>
+  <p class="meta">Local LLM: On-Device · Effective September 18, 2026</p>
 
   <p>Local LLM is an iPhone app that runs language models on your device. It does not require an account. We do not operate a backend that stores your chats.</p>
 
@@ -49,10 +49,10 @@
   <h2>Permissions</h2>
   <p>The app asks for access only when you use the related feature:</p>
   <ul>
-    <li><strong>Photo Library</strong> — attach photos from your library to a chat.</li>
+    <li><strong>Photo Library</strong> — show recent photos in the add menu and attach them to a chat. Access is read-only; the app does not save photos back to your library.</li>
     <li><strong>Camera</strong> — take a photo and attach it to a chat.</li>
     <li><strong>Microphone</strong> — voice input in the composer and Live voice mode.</li>
-    <li><strong>Speech Recognition</strong> — turn speech into text. The app prefers on-device recognition. If that is unavailable, Apple’s speech service may process audio under Apple’s privacy policy.</li>
+    <li><strong>Speech Recognition</strong> — turn speech into text. The app prefers on-device recognition. If it is unavailable or a local recognition attempt fails, Apple’s speech service may process audio when online recognition is allowed. This fallback is enabled by default and can be turned off in the app’s Privacy settings; changes apply to the next recording. Apple processes this audio under its own privacy policy.</li>
     <li><strong>Notifications</strong> — optional alerts, for example when a model download finishes.</li>
   </ul>
   <p>You can change these in iOS Settings at any time.</p>
@@ -60,11 +60,13 @@
   <h2>When the app goes online</h2>
   <p>Network access is used for:</p>
   <ul>
-    <li><strong>Model catalog.</strong> The signed-off model list is fetched from a public GitHub JSON file so the catalog can update without an app update.</li>
-    <li><strong>Model downloads.</strong> Weights are downloaded from Hugging Face (huggingface.co) when you choose a model.</li>
-    <li><strong>Web Search (optional).</strong> If you turn on Web Search for a message, the app queries DuckDuckGo and may fetch short excerpts from result pages to ground that reply. The local model still generates the answer on device. Web Search is off unless you enable it.</li>
+    <li><strong>Model catalog.</strong> The model list is fetched from a public GitHub JSON file so the catalog can update without an app update. Catalog artwork and model logos may also be loaded from their hosting services, including GitHub and jsDelivr. These requests do not include your chats.</li>
+    <li><strong>Model downloads.</strong> Weights are downloaded from Hugging Face (huggingface.co) when you choose a model. That request does not include your chats.</li>
+    <li><strong>Web Search (optional).</strong> When you enable Web Search, queries derived from your message are sent to DuckDuckGo, and the app may access result websites to retrieve excerpts. Personal information you include in a search query may therefore leave your device. Model-generated answers are still produced on device. Web Search stays off until you enable it.</li>
   </ul>
-  <p>Those third parties process the request according to their own policies. We do not receive a copy of your chats from them.</p>
+  <p><strong>Weather queries.</strong> When Web Search is enabled and you ask about weather, the app may send the requested city to Apple’s geocoding service and use the resulting city coordinates to request Apple Weather data through WeatherKit. The city may be taken from your message or resolved locally from earlier messages. This does not request your device’s current location.</p>
+  <p>Network providers and websites receive information needed to serve a request, such as your IP address and the requested resource. They may retain request information under their own policies. We do not receive a copy of your chats from them and do not control their retention or deletion practices. See the policies of <a href="https://www.apple.com/legal/privacy/">Apple</a>, <a href="https://duckduckgo.com/privacy">DuckDuckGo</a>, <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>, <a href="https://huggingface.co/privacy">Hugging Face</a>, and <a href="https://www.jsdelivr.com/terms/privacy-policy">jsDelivr</a>. Other websites you access have their own policies.</p>
+  <p>Downloading a third-party model does not send your conversations to its publisher for inference. Optional web search and online speech recognition are separate network features described above.</p>
 
   <h2>Children</h2>
   <p>The app is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
@@ -73,11 +75,11 @@
   <p>If this policy changes, we will update the date at the top of this page.</p>
 
   <h2>Contact</h2>
-  <p>Questions about privacy: <a href="mailto:tonyzhao1947@gmail.com">tonyzhao1947@gmail.com</a></p>
+  <p>Privacy or support: <a href="mailto:tonyzhao1947@gmail.com">tonyzhao1947@gmail.com</a></p>
 
   <section class="lang zh" lang="zh-Hans">
     <h1>隐私政策</h1>
-    <p class="meta">Local LLM: On-Device · 生效日期 2026年8月21日</p>
+    <p class="meta">Local LLM: On-Device · 生效日期 2026年9月18日</p>
 
     <p>Local LLM 是一款在 iPhone 本机运行大语言模型的应用，无需账号。我们没有用于保存你对话记录的服务器后台。</p>
 
@@ -95,21 +97,23 @@
     <h2>系统权限</h2>
     <p>仅在你使用对应功能时才会请求：</p>
     <ul>
-      <li><strong>相册</strong> — 从相册选取图片并附加到对话。</li>
+      <li><strong>相册</strong> — 在加号菜单显示最近照片并附加到对话。仅读取，不会把照片写回相册。</li>
       <li><strong>相机</strong> — 拍照并附加到对话。</li>
       <li><strong>麦克风</strong> — 输入框语音输入，以及 Live 语音模式。</li>
-      <li><strong>语音识别</strong> — 将语音转为文字。应用优先使用设备端识别；若不可用，音频可能由 Apple 语音服务处理，适用 Apple 的隐私政策。</li>
+      <li><strong>语音识别</strong> — 将语音转为文字。应用优先使用设备端识别；若不可用或本机识别尝试失败，在允许联网识别时，音频可能由 Apple 语音服务处理。此回退选项默认开启，可在应用隐私设置中关闭，更改将在下次录音时生效。Apple 按其隐私政策处理这些音频。</li>
       <li><strong>通知</strong> — 可选，例如模型下载完成提醒。</li>
     </ul>
     <p>你可以随时在 iOS 设置中关闭这些权限。</p>
 
     <h2>何时会联网</h2>
     <ul>
-      <li><strong>模型目录。</strong> 从公开的 GitHub JSON 拉取已审核模型列表，无需发版即可更新目录。</li>
-      <li><strong>模型下载。</strong> 你选择下载时，权重来自 Hugging Face（huggingface.co）。</li>
-      <li><strong>网页搜索（可选）。</strong> 仅在你为某条消息打开网页搜索时，应用会查询 DuckDuckGo，并可能抓取结果页的短摘录作为该次回复的依据。回答仍由本机模型生成。默认关闭。</li>
+      <li><strong>模型目录。</strong> 从公开的 GitHub JSON 拉取模型列表，无需发版即可更新目录。目录封面和模型图标也可能从其托管服务加载，包括 GitHub 和 jsDelivr。这些请求不含你的对话内容。</li>
+      <li><strong>模型下载。</strong> 你选择下载时，权重来自 Hugging Face（huggingface.co）。该请求不含你的对话内容。</li>
+      <li><strong>网页搜索（可选）。</strong> 开启网页搜索时，从该次消息生成的搜索词会发送给 DuckDuckGo，应用也可能访问结果网站获取摘录。因此，你在搜索词中包含的个人信息可能离开设备。模型生成的回答仍在本机完成。网页搜索默认关闭，需你主动打开。</li>
     </ul>
-    <p>上述第三方按其自身政策处理请求。我们不会从他们那里拿到你的对话副本。</p>
+    <p><strong>天气查询。</strong>开启网页搜索并询问天气时，应用可能将查询城市发送给 Apple 地理编码服务，再使用解析出的城市坐标通过 WeatherKit 请求 Apple 天气数据。城市可能来自当前消息，或在本机从此前消息中解析。这不会请求设备的当前位置。</p>
+    <p>网络服务商和网站会收到处理请求所需的信息，例如 IP 地址和请求的资源，并可能按其自身政策保留请求信息。我们不会从他们那里拿到你的对话副本，也无法控制其保留或删除方式。请参阅 <a href="https://www.apple.com/legal/privacy/">Apple</a>、<a href="https://duckduckgo.com/privacy">DuckDuckGo</a>、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>、<a href="https://huggingface.co/privacy">Hugging Face</a> 和 <a href="https://www.jsdelivr.com/terms/privacy-policy">jsDelivr</a> 的政策。你访问的其他网站也有各自的政策。</p>
+    <p>下载第三方模型并不意味着将对话发送给模型发布方进行推理。可选的网页搜索和联网语音识别是上文单独说明的联网功能。</p>
 
     <h2>儿童</h2>
     <p>本应用不面向 13 岁以下儿童，我们也不会故意收集儿童的个人信息。</p>
@@ -118,7 +122,7 @@
     <p>若本政策更新，我们会修改本页顶部的日期。</p>
 
     <h2>联系</h2>
-    <p>隐私相关问题请联系：<a href="mailto:tonyzhao1947@gmail.com">tonyzhao1947@gmail.com</a></p>
+    <p>隐私或支持请联系：<a href="mailto:tonyzhao1947@gmail.com">tonyzhao1947@gmail.com</a></p>
   </section>
 </main>
 </body>
