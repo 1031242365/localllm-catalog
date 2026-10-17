@@ -31,7 +31,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Local LLM: On-Device · Effective September 18, 2026</p>
+  <p class="meta">Local LLM: On-Device · Effective October 17, 2026</p>
 
   <p>Local LLM is an iPhone app that runs language models on your device. It does not require an account. We do not operate a backend that stores your chats.</p>
 
@@ -61,7 +61,7 @@
   <p>Network access is used for:</p>
   <ul>
     <li><strong>Model catalog.</strong> The model list is fetched from a public GitHub JSON file so the catalog can update without an app update. Catalog artwork and model logos may also be loaded from their hosting services, including GitHub and jsDelivr. These requests do not include your chats.</li>
-    <li><strong>Model downloads.</strong> Weights are downloaded from Hugging Face (huggingface.co) when you choose a model. That request does not include your chats.</li>
+    <li><strong>Model downloads.</strong> When you choose a model, downloads use ModelScope (modelscope.cn) for mainland China network IPs and Hugging Face (huggingface.co) elsewhere. Before downloading, the app contacts Country.is (api.country.is), or MyIP (api.myip.com) if needed, to identify the country of your network IP. These services receive your IP address; the app does not save it or request device location. These requests do not include your chats.</li>
     <li><strong>Web Search (optional).</strong> When you enable Web Search, queries derived from your message are sent to DuckDuckGo, and the app may access result websites to retrieve excerpts. Personal information you include in a search query may therefore leave your device. Model-generated answers are still produced on device. Web Search stays off until you enable it.</li>
   </ul>
   <p><strong>Weather queries.</strong> When Web Search is enabled and you ask about weather, the app may send the requested city to Apple’s geocoding service and use the resulting city coordinates to request Apple Weather data through WeatherKit. The city may be taken from your message or resolved locally from earlier messages. This does not request your device’s current location.</p>
@@ -79,7 +79,7 @@
 
   <section class="lang zh" lang="zh-Hans">
     <h1>隐私政策</h1>
-    <p class="meta">Local LLM: On-Device · 生效日期 2026年9月18日</p>
+    <p class="meta">Local LLM: On-Device · 生效日期 2026年10月17日</p>
 
     <p>Local LLM 是一款在 iPhone 本机运行大语言模型的应用，无需账号。我们没有用于保存你对话记录的服务器后台。</p>
 
@@ -108,7 +108,7 @@
     <h2>何时会联网</h2>
     <ul>
       <li><strong>模型目录。</strong> 从公开的 GitHub JSON 拉取模型列表，无需发版即可更新目录。目录封面和模型图标也可能从其托管服务加载，包括 GitHub 和 jsDelivr。这些请求不含你的对话内容。</li>
-      <li><strong>模型下载。</strong> 你选择下载时，权重来自 Hugging Face（huggingface.co）。该请求不含你的对话内容。</li>
+      <li><strong>模型下载。</strong> 你选择下载时，中国大陆网络 IP 使用魔搭（modelscope.cn），其他地区使用 Hugging Face（huggingface.co）。下载前，应用通过 Country.is（api.country.is），必要时通过 MyIP（api.myip.com），查询网络 IP 所属国家或地区。上述服务会收到你的 IP 地址；应用不保存该地址，也不请求设备定位权限。这些请求不含你的对话内容。</li>
       <li><strong>网页搜索（可选）。</strong> 开启网页搜索时，从该次消息生成的搜索词会发送给 DuckDuckGo，应用也可能访问结果网站获取摘录。因此，你在搜索词中包含的个人信息可能离开设备。模型生成的回答仍在本机完成。网页搜索默认关闭，需你主动打开。</li>
     </ul>
     <p><strong>天气查询。</strong>开启网页搜索并询问天气时，应用可能将查询城市发送给 Apple 地理编码服务，再使用解析出的城市坐标通过 WeatherKit 请求 Apple 天气数据。城市可能来自当前消息，或在本机从此前消息中解析。这不会请求设备的当前位置。</p>
